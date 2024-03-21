@@ -1,0 +1,175 @@
+/*Variables globales*/
+:root {
+    --background: #f3f5fc;
+    --primaryColor: #0A3871;
+    --secondaryColor: #ffffff;
+    --thirdColor: #D8DFE8;
+    --font:"Roboto Mono", monospace;
+}
+
+/*Modelo de caja a todos los elementos*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px*/
+}
+**, *::before, *::after {
+    box-sizing: inherit;
+}
+/*Color de fondo*/
+body {
+    background-color: var(--background);
+}
+/*Ordenar todos los elementos hijos de MAIN en horizontal(flex)*/
+main {
+    display: flex;
+    justify-content: center;
+}
+/*Estilos al logo*/
+.logo {
+    width: 7rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+/*Estilos al textarea*/
+.encryptor__input {
+    width: 50rem;
+    height: 35rem;
+    margin: 10rem 2rem 4rem 25rem;
+    background-color: var(--background);
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: var(--font);
+    font-size: 2.3rem;
+    color: var(--primaryColor);
+}
+
+.encryptor__input::placeholder {
+    font-family: var(--font);
+    color: var(--primaryColor);
+    font-size: 2.3rem;
+}
+/*Estilos al section que contiene el output*/
+.output {
+    background-color: var(--secondaryColor);
+    margin: 5rem 2rem 0 15rem;
+    height: 30rem;
+    padding: 5rem 5rem 18rem 5rem;
+    border-radius: 2rem;
+}
+/*imagen/figura de la zona del resultado*/
+.output__figure {
+    display: block;
+    width: 17rem;
+    margin: 0 auto 5rem auto;
+}
+/*Texto de recomendación del output*/
+.output__tip {
+    text-align: center;
+    font-family: var(--font);
+    margin-bottom: 6rem;
+}
+/*Esconder el textarea del output*/
+.result {
+    visibility: hidden;
+}
+/*Estilos al resultado de la encriptación/desencriptación*/
+.output__result--text {
+    border: none;
+    height: 35rem;
+    resize: none;
+    outline: none;
+    font-size: 2.3rem;
+    font-family: var(--font);
+    position: absolute;
+    right: 7rem;
+    top: 10rem;
+}
+/*h3*/
+.tip__title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*etiqueta p */
+.tip__content {
+    font-size: 1.3rem;
+}
+
+.encryptor__tip {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin: 0 0 2rem 9rem
+}
+/*Estilos a la recomendación de no usar acentos ni mayúsculas*/
+.tip__image {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+}
+
+.tip__text {
+    font-family: var(--font);
+    font-size: 1.3rem;
+}
+/*margin izquierdo a los botones de encriptar/desencriptar*/
+.encryptor__buttons {
+    margin-left: 20rem;
+}
+/*Estilos genericos a los botones*/
+.button {
+    background-color: var(--thirdColor);
+    font-family: var(--font);
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1.5rem 6rem;
+    border-radius: 1.8rem;
+    width: 20rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin: 0 5rem 2rem 0;
+}
+/*Aumentar escala de botones al posicionar el cursor por encima*/
+.button:hover {
+    transform: scale(1.05);
+}
+/*Estilos al boton encriptar*/
+.encryptor__buttons--encrypt {
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+/*Boton copiar*/
+.output__button {
+    display: block;
+    margin: 10rem auto 0 auto;
+}
+/*Estilos al footer de la página*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primaryColor);
+    padding: 2rem 0 2rem 0;
+    margin: 0;
+}
+
+footer p {
+    color: var(--background);
+    font-family: var(--font);
+    font-size: 2rem;
+    text-align: center;
+}
+/*Estilos a los iconos de redes sociales*/
+.socialMedia {
+    margin-left: 2.5rem;
+    transition: 0.1s ease;
+}
+/*Aumenta la escala al posicionar el cursor sobre los iconos de redes sociales*/
+.socialMedia:hover {
+    transform: scale(1.1);
+}
+/*Esconder la imagen y texto del output*/
+.hide {
+    visibility: hidden;
+}

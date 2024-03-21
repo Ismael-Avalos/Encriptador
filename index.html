@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css"><!--normalize.css-->
+    <!--Fuente de Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!--Archivo de estilos CSS-->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="img/code.png" type="image/x-icon">
+    <title>Encriptador</title>
+</head>
+<body>
+    <!--Logo-->
+    <header>
+        <a id="logo" href="#"><img class="logo" title="hola papu :v" src="img/encriptado-de-datos.png" alt="logo."></a>
+    </header>
+    <main class="prueba">
+        <section class="encryptor">
+            <!--Espacio para escribir-->
+            <textarea oninput="restrictInput(event)" class="encryptor__input" placeholder="Ingresa el texto aquí..."></textarea>
+            <!--Aviso-->
+            <div class="encryptor__tip tip">
+                <img class="tip__image" src="img/danger.png" alt="alert icon.">
+                <p class="tip__text">¡Escribe sin acentos y en minúsculas!</p>
+            </div>
+            <!--Botones de encriptar y desencriptar-->
+            <div class="encryptor__buttons">
+                <input class="encryptor__buttons--encrypt button" type="button" value="Encriptar">
+                <input class="encryptor__buttons--decrypt button" type="button" value="Desencriptar">
+            </div>
+        </section>
+        <!--Output/Resultado de la encriptación/desencriptación-->
+        <section class="output">
+            <!--Imagen y texto predeterminado-->
+            <img class="output__figure" src="img/programmer.png" alt="programmer image.">
+            <div class="output__tip tip">
+                <h3 class="tip__title">No se encontró ningún texto</h3>
+                <p class="tip__content">Ingresa el texto que deseas encriptar/desencriptar</p>
+            </div>
+            <!--Boton copiar-->
+            <input class="output__button button" type="button" value="Copiar">
+            <!--textarea para el resultado/Output-->
+            <div class="output__result">
+                <textarea class="output__result--text result" readonly></textarea>
+            </div>
+    </section>
+    </main>
+    <!--Footer y redes sociales-->
+    <footer>
+        <p>Challenge 01 - OracleONE-G6 - AluraLatam - Ismael Pinto</p>
+        <a class="socialMedia" href="https://www.linkedin.com/in/ismaelpinto/"><img src="img/linkedin.png" alt="logo de linkedIn."></a>
+        <a class="socialMedia" href="https://github.com/Ismael-Avalos"><img src="img/logotipo-de-github.png" alt="Logo de GitHub."></a>
+        <a class="socialMedia" href="https://www.instagram.com/ishma2001/"><img src="img/instagram.png" alt="Logo de Instagram."></a>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
+    
+    
